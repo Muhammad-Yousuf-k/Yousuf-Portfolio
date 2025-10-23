@@ -74,7 +74,7 @@ const projects = [
     title: "Tic Tak Toe",
     description: "practicing to enchant to skills, To Make a Game",
     image: "img/TTT.jpg",
-    link: "https://muhammad-yousuf-k.github.io/tik-tak-toe/",
+    link: "https://tiktaktoc-og.netlify.app/",
   },
   {
     title: "YouTube Clone",
@@ -83,8 +83,8 @@ const projects = [
     link: "https://muhammad-yousuf-k.github.io/youtube_cloned/",
   },
   {
-    title: "Origin Digital",
-    description: "practicing to enchant to skills, try to make leads Mangement System",
+    title: "ExpensePro",
+    description: "Expense Pro is a simple app to track and manage your daily expenses easily.",
     image: "img/origin digital logo.png",
     link: "https://muhammad-yousuf-k.github.io/Origin-Digital-Service/#",
   },
