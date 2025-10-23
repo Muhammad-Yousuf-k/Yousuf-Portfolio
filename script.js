@@ -86,7 +86,7 @@ const projects = [
     title: "ExpensePro",
     description: "Expense Pro is a simple app to track and manage your daily expenses easily.",
     image: "img/origin digital logo.png",
-    link: "https://muhammad-yousuf-k.github.io/Origin-Digital-Service/#",
+    link: "https://expensepro-production.up.railway.app/",
   },
 
 ];
