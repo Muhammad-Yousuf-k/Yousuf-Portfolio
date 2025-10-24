@@ -66,26 +66,26 @@ const projects = [
   {
     title: "Netflix Clone",
     description: "practicing to enchant to skills, try to clone Netflix",
-    image: "img/netflix.png",
+    image: "img/proj/netflix.webp",
     link: "https://muhammad-yousuf-k.github.io/Netflex-clone/",
   },
 
   {
     title: "Tic Tak Toe",
     description: "practicing to enchant to skills, To Make a Game",
-    image: "img/TTT.jpg",
+    image: "img/proj/tikTakToc.webp",
     link: "https://tiktaktoc-og.netlify.app/",
   },
   {
     title: "YouTube Clone",
     description: "practicing to enchant to skills, try to clone YouTube",
-    image: "icon/YouTubeLogo.svg",
+    image: "img/proj/youtube.webp",
     link: "https://muhammad-yousuf-k.github.io/youtube_cloned/",
   },
   {
     title: "ExpensePro",
     description: "Expense Pro is a simple app to track and manage your daily expenses easily.",
-    image: "img/origin digital logo.png",
+    image: "img/proj/ExpensePro.webp",
     link: "https://expensepro-production.up.railway.app/",
   },
 
@@ -119,28 +119,40 @@ const certificate = [
 ];
 const techz = [
   {
-    icon: "icon/html.svg",
+    icon: "icon/stackSVG/html.svg",
     name: "HTML",
   },
   {
-    icon: "icon/css.svg",
+    icon: "icon/stackSVG/css.svg",
     name: "CSS",
   },
   {
-    icon: "icon/javascript.svg",
+    icon: "icon/stackSVG/javascript.svg",
     name: "JavaScript",
   },
   {
-    icon: "icon/wordpress.svg",
+    icon: "icon/stackSVG/wordpress.svg",
     name: "WordPress",
   },
   {
-    icon: "icon/photoshop.svg",
+    icon: "icon/stackSVG/photoshop.svg",
     name: "PhotoShop",
   },
   {
-    icon: "icon/microsoft_office.svg",
+    icon: "icon/stackSVG/microsoft_office.svg",
     name: "Microsoft Office",
+  },
+  {
+    icon: "icon/stackSVG/express.svg",
+    name: "express.js",
+  },
+  {
+    icon: "icon/stackSVG/node.svg",
+    name: "node.js",
+  },
+  {
+    icon: "icon/stackSVG/mongodb.svg",
+    name: "mongoDB",
   }
 
 ];
