@@ -32,7 +32,9 @@
 
 :root {
     --mbHeadingSize: 8vh; /* large heading */
-    --mbHeadingSmallSize: 6vh; /* smaller heading */
+    --mbHeadingSmallSize: 4vh; /* smaller heading */
+    --mbHeadingMoreSmallSize: 3.5vh; /* smaller heading */
+    --mbHeadingMoreMoreSmallSize: 3vh; /* smaller heading */
     --mbparaSize: 2.5vh; /* main paragraph */
     --mbparaSmallSize: 2vh; /* small paragraph */
     

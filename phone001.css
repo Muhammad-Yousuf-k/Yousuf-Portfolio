@@ -131,37 +131,69 @@
 
 
 
-@media only screen and (max-width: 768px) {}
+@media only screen and (max-width: 1024px) {
+    .about_img{
+        width: 75%;
+    }
+
+    .about_left{
+        width: 70%;
+    }
+    .about_right{
+        width: 30%;
+    }
+}
+
+@media only screen and (max-width: 768px) {
+    .about_img{
+        display: none;
+    }
+
+    .about_left {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .about_lower_text{
+    padding-left: 0%;
+    margin-top: 0px;
+    margin-left: 0px;
+
+    }
+    
+    .about_lower_para{
+margin-left: 0%;
+    margin-top: 0px;
+    }
+
+    .about_btn_box{
+        padding-left: 0%; 
+    margin-top: 20px;
+    width: auto;
+    }
+    .about_right {
+        width: 0%;
+    }
+}
 
 @media only screen and (max-width: 425px) {
 
 
-    .main_btn {
-        display: none;
-    }
+  .about_upper_text{
+    font-size: var(--mbHeadingSize);
+}
 
-    .nav {
-        flex-direction: column;
-    }
+.about_lower_text,.about_lower_text_span{
+      font-size: var(--mbHeadingSmallSize);
 
-    .nav_ul {
-        display: flex;
-        justify-content: space-evenly;
-        width: 100%;
-        margin-right: 0%;
-        display: none;
-    }
+  }
 
-    .burger {
-        display: block;
-    }
-
-    .name {
-        margin-left: 0%;
-        width: 100%;
-        display: flex;
-        justify-content: space-evenly;
-    }
+  .about_lower_para{
+    font-size: var(--mbparaSize);
+  }
 
 
 
@@ -172,18 +204,12 @@
 @media only screen and (max-width: 375px) {
 
 
-    .main_head_white,
-    .main_head {
-        font-size: var(--mbHeadingSize);
-
+    .about_lower_text,.about_lower_text_span{
+        font-size: var(--mbHeadingMoreSmallSize);
     }
 
-    .main_para {
-        font-size: var(--mbparaSize);
-    }
-
-    .name {
-        justify-content: space-between;
+    .modern-btn,.btnC{
+        padding: 14px 20px;
     }
 
 
@@ -193,9 +219,31 @@
 
 @media only screen and (max-width: 320px) {
 
-    .name {
-        justify-content: space-between;
+        .modern-btn, .btnC {
+        padding: 14px 10px;
     }
+
+    .about_lower_text,.about_lower_text_span{
+        font-size: var(--mbHeadingMoreMoreSmallSize);
+    }
+
+
+
+
+}
+
+
+/*  */
+
+
+
+@media only screen and (max-width: 425px) {
+
+
+  .portfolio_upper_text{
+    font-size: var(--mbHeadingSize);
+  }
+
 
 
 
