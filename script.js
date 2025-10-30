@@ -117,44 +117,93 @@ const certificate = [
   }
 
 ];
+
+// const techz = [
+//   {
+//     icon: "icon/stackSVG/html.svg",
+//     name: "HTML",
+//   },
+//   {
+//     icon: "icon/stackSVG/css.svg",
+//     name: "CSS",
+//   },
+//   {
+//     icon: "icon/stackSVG/javascript.svg",
+//     name: "JavaScript",
+//   },
+//   {
+//     icon: "icon/stackSVG/wordpress.svg",
+//     name: "WordPress",
+//   },
+//   {
+//     icon: "icon/stackSVG/photoshop.svg",
+//     name: "PhotoShop",
+//   },
+//   {
+//     icon: "icon/stackSVG/microsoft_office.svg",
+//     name: "Microsoft Office",
+//   },
+//   {
+//     icon: "icon/stackSVG/express.svg",
+//     name: "express.js",
+//   },
+//   {
+//     icon: "icon/stackSVG/node.svg",
+//     name: "node.js",
+//   },
+//   {
+//     icon: "icon/stackSVG/mongodb.svg",
+//     name: "mongoDB",
+//   }
+
+// ];
+
 const techz = [
   {
-    icon: "icon/stackSVG/html.svg",
+    icon: "fab fa-html5",
     name: "HTML",
+    progress: "95%"
   },
   {
-    icon: "icon/stackSVG/css.svg",
+    icon: "fab fa-css3-alt",
     name: "CSS",
+    progress: "90%"
   },
   {
-    icon: "icon/stackSVG/javascript.svg",
+    icon: "fab fa-js",
     name: "JavaScript",
+    progress: "85%"
   },
   {
-    icon: "icon/stackSVG/wordpress.svg",
+    icon: "fab fa-wordpress",
     name: "WordPress",
+    progress: "88%"
   },
   {
-    icon: "icon/stackSVG/photoshop.svg",
-    name: "PhotoShop",
+    icon: "fas fa-paint-brush",
+    name: "Photoshop",
+    progress: "86%"
   },
   {
-    icon: "icon/stackSVG/microsoft_office.svg",
+    icon: "fas fa-file-word",
     name: "Microsoft Office",
+    progress: "90%"
   },
   {
-    icon: "icon/stackSVG/express.svg",
-    name: "express.js",
+    icon: "fas fa-server",
+    name: "Express.js",
+    progress: "78%"
   },
   {
-    icon: "icon/stackSVG/node.svg",
-    name: "node.js",
+    icon: "fab fa-node-js",
+    name: "Node.js",
+    progress: "80%"
   },
   {
-    icon: "icon/stackSVG/mongodb.svg",
-    name: "mongoDB",
+    icon: "fas fa-database",
+    name: "MongoDB",
+    progress: "75%"
   }
-
 ];
 
 
@@ -200,16 +249,23 @@ certificate.forEach((certificate) => {
 });
 
 
-
 // tech stack============================
 const container2 = document.getElementById("projects-container3");
 techz.forEach((techz) => {
   const card = document.createElement("div");
   card.className = "card";
-  card.innerHTML = `    <div class="cd_box">
-        <img class="cd_box_img" src="${techz.icon}" alt="">
-        <h1>${techz.name}</h1>
-    </div>
+  card.innerHTML = `    <div class="skills-container">
+
+          <div class="skill">
+            <div class="skill-header"><i class="${techz.icon}"></i>
+              <h4>${techz.name}</h4>
+            </div>
+            <div class="progress-bar">
+              <div style="width:${techz.progress}" class="progress mongo"></div>
+            </div>
+          </div>
+
+        </div>
  `;
   container2.appendChild(card);
 });

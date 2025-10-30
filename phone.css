@@ -109,9 +109,6 @@
         margin-top: 30px;
     }
 
-    .footer_text {
-        font-size: 25px;
-    }
 }
 
 @media only screen and (max-width: 760px) {
@@ -129,15 +126,6 @@
         width: 40px;
     }
 
-    .main_head {
-        font-size: 10vh;
-
-    }
-
-    .main_head_white {
-        font-size: 10vh;
-
-    }
 
     .nav_ul {
         display: none;
@@ -156,26 +144,31 @@
 
 
 
+}
 
 
-    .about_upper_text {
-        font-size: 10vh;
+@media only screen and (max-width: 550px) {
+    .service-section-textBox {
+        height: 30vh;
     }
 
-
-    .portfolio_upper_text {
-        font-size: 9vh;
-
-
+    .service-container {
+        height: 70vh;
     }
-
-    .footer_text {
-        font-size: 20px;
-    }
-
 
 }
 
+
+@media only screen and (max-width: 425px) {
+    .service-section-textBox {
+        height: 40vh;
+    }
+
+    .service-container {
+        height: 60vh;
+    }
+
+}
 
 
 @media only screen and (max-width: 450px) {
@@ -184,15 +177,12 @@
     }
 
 
-    .main_para1 {
-        font-size: 2vh;
-        /* border: 2px solid black; */
-        width: 95%;
-    }
 
     .contect_left_connet_text {
         font-size: 20px;
     }
+
+    
 
 
 }
@@ -200,11 +190,6 @@
 @media only screen and (max-width: 380px) {
     .name {
         font-size: 25px;
-    }
-
-    .main_head,
-    .main_head_white {
-        font-size: 9vh;
     }
 
     .main_btn {
@@ -243,5 +228,35 @@
         width: auto;
     }
 
+
+}
+
+/* ======= Responsive for tablets ======= */
+@media (max-width: 320px) {
+
+    .main_head,.main_head_white,.about_upper_text,.portfolio_upper_text,.service-section-textBox>h2{
+        font-size: 6vh;
+    }
+
+}
+
+
+
+/* ======= Responsive for tablets ======= */
+@media (max-width: 1024px) {
+
+    .service-container {
+        grid-template-columns: repeat(2, minmax(250px, 1fr));
+        gap: 20px;
+    }
+
+}
+
+/* ======= Responsive for mobile phones ======= */
+@media (max-width: 768px) {
+
+    .service-container {
+        grid-template-columns: 1fr;
+    }
 
 }
