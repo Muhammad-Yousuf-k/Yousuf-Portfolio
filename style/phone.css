@@ -161,7 +161,7 @@
 
 
 
-/*  */
+/* about  */
 
 
 
@@ -277,7 +277,7 @@
 }
 
 
-/*  */
+/* portfolio */
 
 
 
@@ -295,7 +295,7 @@
 }
 
 
-/*  */
+/* service */
 
 
 
@@ -350,9 +350,9 @@
 
     .service-container {
 
-    padding: 0px;
+        padding: 0px;
 
-}
+    }
 
 
 
@@ -367,7 +367,7 @@
 }
 
 
-/*  */
+/* contact */
 
 
 @media only screen and (max-width: 425px) {
