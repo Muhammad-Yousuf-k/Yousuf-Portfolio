@@ -23,7 +23,7 @@
     <section id="Home" class="section1">
 
         <div class="nav fade-in-down">
-            <h1 class="name">Muhammad Yousuf <img id="bug" class="burger" src="icon/burger.svg" alt=""></h1>
+            <h1 class="name">Muhammad Yousuf <img id="bug" class="burger" src="icon/burger.svg" alt=""><img id="burgerBtn" class="burger" src="icon/burger.svg" alt=""></h1>
 
             <ul id="nv_ul" class="nav_ul">
                 <li class="nav_li"><a class="nav_a" href="#Home">Home</a></li>
@@ -33,6 +33,19 @@
                 <li class="nav_li"><a class="nav_a" href="#Contact">Contact</a></li>
             </ul>
         </div>
+
+        <!-- Mobile Menu -->
+<div id="mobileNav" class="mobile_nav">
+    <button class="modern-btn bbbtn" id="back">back</button>
+  <ul>
+    <li><a href="#Home">Home</a></li>
+    <li><a href="#About">About</a></li>
+    <li><a href="#Portfolio">Portfolio</a></li>
+    <li><a href="#Blogs">Blogs</a></li>
+    <li><a href="#Contact">Contact</a></li>
+  </ul>
+</div>
+
         <div class="home">
             <div class="left">
                 <div class="textto">
@@ -273,6 +286,24 @@
     <script src="js/script.js"></script>
     <script src="js/animation.js"></script>
 
+<script>
+  const burgerm = document.getElementById("burgerBtn");
+  const back = document.getElementById("back");
+  const mobileNav = document.getElementById("mobileNav");
+
+  burgerm.addEventListener("click", () => {
+    mobileNav.classList.toggle("active");
+  });
+
+  back.addEventListener("click", () => {
+    mobileNav.classList.toggle("active");
+  });
+
+  // optional: close when clicking a link
+  document.querySelectorAll(".mobile_nav a").forEach(link => {
+    link.addEventListener("click", () => mobileNav.classList.remove("active"));
+  });
+</script>
 
 
 </body>

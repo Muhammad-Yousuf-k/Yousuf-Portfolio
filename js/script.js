@@ -279,7 +279,6 @@ burger.addEventListener("click", () => {
   let ul = document.getElementById("nv_ul")
   // ul.setAttribute("display", "none");
 
-  console.log(ul);
 
   if (ul.style.display === "none") {
     ul.style.display = "flex"
