@@ -20,7 +20,7 @@
 }
 /* ---------------- Font Family ---------------- */
 :root {
-    --fnt_cur: cursive; /* accent font for headings */
+    --fnt_cur: "Roboto", sans-serif; /* accent font for headings */
 }
 /* ---------------- Background Colors ---------------- */
 :root {
