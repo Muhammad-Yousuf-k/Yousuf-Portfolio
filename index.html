@@ -10,10 +10,10 @@
     <link
         href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
         rel="stylesheet">
-    <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="color.css">
-    <link rel="stylesheet" href="phone.css">
-    <link rel="stylesheet" href="phone001.css">
+    <link rel="stylesheet" href="style/style.css">
+    <link rel="stylesheet" href="style/color.css">
+    <link rel="stylesheet" href="style/phone.css">
+    <!-- <link rel="stylesheet" href="phone001.css"> -->
     <!-- <link rel="stylesheet" href="aa.css"> -->
     <link rel="stylesheet" href="animation.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
@@ -43,16 +43,16 @@
                 </div>
                 <div class="textto1">
 
-                <div class="main_btn ">
-                    <button class="btn b1">React</button>
-                    <button class="btn">javascript</button>
-                    <button class="btn">node.js</button>
-                    <button class="btn">tailwind</button>
-                </div>
-                <div class="main_btn1 fade-in-left">
-                    <a href="#projbtn"><button class="modern-btn b12">Projects</button></a>
-                    <a href="#Contact"><button class="btnC">Contact</button></a>
-                </div>
+                    <div class="main_btn fade-in-left">
+                        <button class="btn b1">React</button>
+                        <button class="btn">javascript</button>
+                        <button class="btn">node.js</button>
+                        <button class="btn">tailwind</button>
+                    </div>
+                    <div class="main_btn1 fade-in-left">
+                        <a href="#projbtn"><button class="modern-btn b12">Projects</button></a>
+                        <a href="#Contact"><button class="btnC">Contact</button></a>
+                    </div>
                 </div>
 
             </div>
@@ -67,28 +67,28 @@
     </section>
     <section id="About" class="section2">
         <div class="about">
-            <div class="about_upper">
+            <div class="about_upper slid-up">
                 <h1 class="about_upper_text">About Me</h1>
                 <p class="about_upper_para">&#9830 Transforming Ideas Into Digital Experience &#9830</p>
             </div>
             <div class="about_lower">
                 <div class="about_left ">
-                    <h1 class="about_lower_text"><span class="about_lower_text_span">Hello, I'm</span><br>Muhammad
+                    <h1 class="about_lower_text slid-left"><span class="about_lower_text_span">Hello, I'm</span><br>Muhammad
                         Yousuf
                         Khan</h1>
-                    <p class="about_lower_para">Hi I’m Muhammad Yousuf Khan a creative web developer and designer who
+                    <p class="about_lower_para slid-left">Hi I’m Muhammad Yousuf Khan a creative web developer and designer who
                         loves turning ideas into clean user friendly digital experiences. With experience in both front
                         End and back End development I focus on building responsive websites that look great and work
                         smoothly. I also enjoy blending design and technology to create projects that are thoughtful
                         efficient and impactful.</p>
-                    <div class="about_btn_box">
+                    <div class="about_btn_box slid-left">
                         <a href="#"><button class="modern-btn b12">Download CV</button></a>
                         <a href="#projbtn"><button class="btnC "> View Projects</button></a>
                     </div>
                 </div>
 
-                <div class="about_right">
-                    <img class="about_img" src="img/you.webp" alt="">
+                <div class="about_right ">
+                    <img class="about_img glowAnimation slid-right" src="img/you.webp" alt="">
                 </div>
             </div>
         </div>
@@ -96,21 +96,21 @@
     </section>
 
     <section id="Portfolio" class="section3">
-        <div class="portfolio_upper">
+        <div class="portfolio_upper slid-up ">
             <h1 class="portfolio_upper_text">Portfolio Showcase</h1>
             <p class="portfolio_upper_para">&#9830 here you'll find a collection of my work including websites templates
                 digital products and creative projects. each piece reflects my skills attention to detail and focus on
                 creating smooth and effective user experiences &#9830</p>
         </div>
-        <div class="portfolio_middle">
+        <div class="portfolio_middle slid-up ">
             <button id="projbtn" class="port_btn">Projects</button>
             <button id="cerbtn" class="port_btn">Certificate</button>
             <button id="techbtn" class="port_btn">Tech Stack</button>
         </div>
-        <div class="portfolio_lower">
-            <div style="display: flex;" id="projects-container1"></div>
-            <div style="display: none;" id="projects-container2"></div>
-            <div style="display: none;" id="projects-container3"></div>
+        <div class="portfolio_lower slid-up ">
+            <div class="slid-up" style="display: flex;" id="projects-container1"></div>
+            <div class="slid-up" style="display: none;" id="projects-container2"></div>
+            <div class="slid-up" style="display: none;" id="projects-container3"></div>
         </div>
         <hr class="hr">
     </section>
@@ -118,12 +118,12 @@
     <section class="services-section" id="services">
         <div class="service_mainBox">
 
-            <div class="service-section-textBox">
+            <div class="service-section-textBox slid-up ">
                 <h2>My Services</h2>
-                <p>I combine design and development to deliver complete digital solutions</p>
+                <p>&#9830 I combine design and development to deliver complete digital solutions &#9830</p>
             </div>
 
-            <div class="service-container">
+            <div class="service-container slid-up ">
                 <div class="service-card">
                     <h3>Web Development</h3>
                     <p>Responsive and performance-driven websites built using HTML CSS JavaScript and Node.js. Every
@@ -160,7 +160,7 @@
 
     <section id="Contact" class="section4">
         <div class="main_contact_box">
-            <div class="left_contact">
+            <div class="left_contact slid-left">
                 <form action="https://formsubmit.co/0d4b91e044a22b7955dbc1170bb01286" method="POST">
                     <h1 class="contact_text">Get in Touch <img class="contact_text_left_icon" src="icon/share.svg"
                             alt="">
@@ -207,7 +207,7 @@
                             class="contect_left_connet_anh_img" src="icon/github.svg" alt="">Github</a>
                 </div>
             </div>
-            <div class="right_contact">
+            <div class="right_contact slid-right">
                 <iframe class="googlemap"
                     src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d28916.019239076053!2d67.0843110730022!3d25.05095540837437!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3eb3440540caec93%3A0x187210639cf3390d!2sLyari%20Basti%20Taiser%20Town%2C%20Karachi%2C%20Pakistan!5e0!3m2!1sen!2s!4v1748873705276!5m2!1sen!2s"
                     allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
@@ -255,10 +255,10 @@
             <p>&copy; 2025 M. Yousuf Khan. All rights reserved.</p>
         </div>
     </footer>
-    <script src="script.js"></script>
+    <script src="js/script.js"></script>
+    <script src="js/animation.js"></script>
 
 
- 
 
 </body>
 
