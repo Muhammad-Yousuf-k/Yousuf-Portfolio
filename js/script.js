@@ -289,3 +289,22 @@ burger.addEventListener("click", () => {
     console.log("false");
   }
 })
+
+
+
+const burgerm = document.getElementById("burgerBtn");
+  const back = document.getElementById("back");
+  const mobileNav = document.getElementById("mobileNav");
+
+  burgerm.addEventListener("click", () => {
+    mobileNav.classList.toggle("active");
+  });
+
+  back.addEventListener("click", () => {
+    mobileNav.classList.toggle("active");
+  });
+
+  // optional: close when clicking a link
+  document.querySelectorAll(".mobile_nav a").forEach(link => {
+    link.addEventListener("click", () => mobileNav.classList.remove("active"));
+  });
