@@ -94,25 +94,25 @@ const certificate = [
   {
     title: "Web Development",
     description: "by Visionery IT Institute",
-    image: "img/web_certi.jpg",
+    image: "img/certificate/web_certi.webp",
     Status: "Complete"
   },
   {
     title: "C.I.T",
     description: "by Visionery IT Institute",
-    image: "img/cit_certi.jpg",
+    image: "img/certificate/cit_certi.webp",
     Status: "Complete"
   },
   {
     title: "Matric",
     description: "by Pak German Capital School",
-    image: "img/TTT.jpg",
+    image: "img/certificate/",
     Status: "Complete"
   },
   {
     title: "(DAE) in software engineering",
     description: "by Capital Institute",
-    image: "img/TTT.jpg",
+    image: "img/certificate/",
     Status: "continue"
   }
 
@@ -293,18 +293,18 @@ burger.addEventListener("click", () => {
 
 
 const burgerm = document.getElementById("burgerBtn");
-  const back = document.getElementById("back");
-  const mobileNav = document.getElementById("mobileNav");
+const back = document.getElementById("back");
+const mobileNav = document.getElementById("mobileNav");
 
-  burgerm.addEventListener("click", () => {
-    mobileNav.classList.toggle("active");
-  });
+burgerm.addEventListener("click", () => {
+  mobileNav.classList.toggle("active");
+});
 
-  back.addEventListener("click", () => {
-    mobileNav.classList.toggle("active");
-  });
+back.addEventListener("click", () => {
+  mobileNav.classList.toggle("active");
+});
 
-  // optional: close when clicking a link
-  document.querySelectorAll(".mobile_nav a").forEach(link => {
-    link.addEventListener("click", () => mobileNav.classList.remove("active"));
-  });
+// optional: close when clicking a link
+document.querySelectorAll(".mobile_nav a").forEach(link => {
+  link.addEventListener("click", () => mobileNav.classList.remove("active"));
+});
