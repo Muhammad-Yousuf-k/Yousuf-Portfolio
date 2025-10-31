@@ -44,7 +44,7 @@
 
     .main_btn {
         padding-left: 0%;
-        */ margin-top: 0px;
+        margin-top: 0px;
         width: auto;
         display: flex;
     }
@@ -155,8 +155,6 @@
     .name {
         justify-content: space-between;
     }
-
-
 
 
 }
@@ -332,6 +330,7 @@
 
         height: 60vh;
         grid-template-columns: repeat(1, minmax(280px, 1fr));
+        overflow-y: scroll;
 
     }
 
@@ -349,6 +348,11 @@
         width: 85%;
     }
 
+    .service-container {
+
+    padding: 0px;
+
+}
 
 
 
