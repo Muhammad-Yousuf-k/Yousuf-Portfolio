@@ -360,9 +360,9 @@
 
 @media only screen and (max-width: 425px) {
 
-    .service-section-textBox {
+    /* .service-section-textBox {
         height: 40vh;
-    }
+    } */
 
     .service-container {
 
@@ -377,10 +377,6 @@
 
 @media only screen and (max-width: 375px) {
 
-
-    .service-section-textBox h2 {
-        font-size: var(--mbHeadingSize);
-    }
 
     .service-section-textBox p {
         width: 85%;
@@ -407,16 +403,24 @@
 
 /* contact */
 
+@media only screen and (max-width: 768px) {
+
+
+
+
+}
+
 
 @media only screen and (max-width: 425px) {
 
-    .main_contact_box {
+    .contact_mann {
         flex-direction: column;
         align-items: center;
     }
 
     .left_contact {
         width: 90%;
+        margin-bottom: 10px;
     }
 
     .right_contact {
@@ -429,10 +433,6 @@
 
 @media only screen and (max-width: 375px) {
 
-
-    .service-section-textBox h2 {
-        font-size: var(--mbHeadingSize);
-    }
 
     .service-section-textBox p {
         width: 85%;

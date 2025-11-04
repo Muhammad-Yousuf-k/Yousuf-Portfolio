@@ -1,62 +1,39 @@
-/* ---------------- Hover & Glow ---------------- */
+/* ---------------- Global Variables ---------------- */
 :root {
-    --hoverclr: rgba(255, 255, 255, 0.055);
-    /* subtle hover effect */
-    --glowclr: #D291BC;
-    /* soft pink glow */
-    --gradiantHover: linear-gradient(to right, var(--fontclr0), rgb(65, 11, 165));
-    /* hover gradient */
-    --gradient: linear-gradient(135deg, #8E44AD, #430E87);
-}
+    /* ---------------- Colors ---------------- */
+    --mainclr: #180929; /* main background */
+    --scclr: rgba(121, 121, 121, 0.055); /* subtle box background */
+    --hoverclr: rgba(255, 255, 255, 0.055); /* subtle hover effect */
+    --glowclr: #D291BC; /* soft pink glow */
+    --fontclr0: #8E44AD; /* heading color */
+    --fontclr1: #EDEDED; /* main text color */
+    --fontclr2: gray; /* paragraph or secondary text */
 
-/* ---------------- Font Colors & Sizes ---------------- */
-:root {
-    --fontclr0: #8E44AD;
-    /* heading color */
-    --fontclr1: #EDEDED;
-    /* main text color */
-    --fontclr2: gray;
-    /* paragraph or secondary text */
+    /* ---------------- Gradients ---------------- */
+    --gradient: linear-gradient(135deg, #8E44AD, #430E87); /* background gradient */
+    --gradiantHover: linear-gradient(to right, var(--fontclr0), rgb(65, 11, 165)); /* hover gradient */
+    --gradiantBgclr: linear-gradient(to right, rgb(65, 11, 165), var(--fontclr0)); /* background gradient */
 
-    --HeadingSize: 10vh;
-    /* large heading */
-    --HeadingSmallSize: 6vh;
-    /* smaller heading */
-    --paraSize: 3vh;
-    /* main paragraph */
-    --paraSmallSize: 2vh;
-    /* small paragraph */
-}
+    /* ---------------- Font Family ---------------- */
+    --fnt_cur: "Roboto", sans-serif; /* accent font for headings */
 
-/* ---------------- Font Family ---------------- */
-:root {
-    --fnt_cur: "Roboto", sans-serif;
-    /* accent font for headings */
-}
+    /* ---------------- Desktop Font Sizes ---------------- */
+    --HeadingSize: 10vh; /* large heading */
+    --HeadingSmallSize: 6vh; /* smaller heading */
+    --paraSize: 3vh; /* main paragraph */
+    --paraSmallSize: 2vh; /* small paragraph */
 
-/* ---------------- Background Colors ---------------- */
-:root {
-    --mainclr: #180929;
-    /* main background */
-    --scclr: rgba(121, 121, 121, 0.055);
-    /* subtle box background */
-    --gradiantBgclr: linear-gradient(to right, rgb(65, 11, 165), var(--fontclr0));
-    /* gradient background */
+    /* ---------------- Mobile Font Sizes ---------------- */
+    --mbHeadingSize: 8vh; /* large heading */
+    --mbHeadingSmallSize: 4vh; /* smaller heading */
+    --mbHeadingMoreSmallSize: 3.5vh; /* smaller heading */
+    --mbHeadingMoreMoreSmallSize: 3vh; /* smaller heading */
+    --mbparaSize: 2.5vh; /* main paragraph */
+    --mbparaSmallSize: 2vh; /* small paragraph */
 }
 
 
-:root {
-    --mbHeadingSize: 8vh;
-    /* large heading */
-    --mbHeadingSmallSize: 4vh;
-    /* smaller heading */
-    --mbHeadingMoreSmallSize: 3.5vh;
-    /* smaller heading */
-    --mbHeadingMoreMoreSmallSize: 3vh;
-    /* smaller heading */
-    --mbparaSize: 2.5vh;
-    /* main paragraph */
-    --mbparaSmallSize: 2vh;
-    /* small paragraph */
 
-}
+
+
+

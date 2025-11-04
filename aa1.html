@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+      :root {
+  --mainclr: #180929;
+  --scclr: rgba(121, 121, 121, 0.055);
+  --hoverclr: rgba(255, 255, 255, 0.055);
+  --glowclr: #D291BC;
+  --fontclr0: #8E44AD;
+  --fontclr1: #EDEDED;
+  --fontclr2: gray;
+  --gradient: linear-gradient(135deg, #8E44AD, #430E87);
+  --gradiantHover: linear-gradient(to right, var(--fontclr0), rgb(65, 11, 165));
+  --fnt_cur: "Roboto", sans-serif;
+}
+
+/* Section */
+.faq-slider-section {
+  background: var(--mainclr);
+  color: var(--fontclr1);
+  padding: 60px 0;
+  text-align: center;
+  font-family: var(--fnt_cur);
+  overflow: hidden;
+  position: relative;
+}
+
+.faq-heading {
+  font-size: clamp(var(--mbHeadingSmallSize), 6vw, var(--HeadingSmallSize));
+  background: var(--gradient);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  margin-bottom: 50px;
+}
+
+/* Slider Container */
+.faq-slider {
+  overflow: hidden;
+  width: 100%;
+}
+
+.faq-track {
+  display: flex;
+  gap: 25px;
+  animation: scrollFaq 30s linear infinite;
+  width: max-content;
+}
+
+@keyframes scrollFaq {
+  from {
+    transform: translateX(0);
+  }
+  to {
+    transform: translateX(-50%);
+  }
+}
+
+/* Card Style */
+.faq-card {
+  background: var(--scclr);
+  border-radius: 20px;
+  box-shadow: 0 0 15px rgba(210, 145, 188, 0.15);
+  padding: 25px;
+  min-width: 300px;
+  max-width: 350px;
+  flex-shrink: 0;
+  text-align: center;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.faq-card:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 0 25px var(--glowclr);
+}
+
+/* User Image */
+.user-img {
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+  margin-bottom: 15px;
+  border: 2px solid var(--fontclr0);
+  object-fit: cover;
+}
+
+/* User Name */
+.user-name {
+  color: var(--fontclr0);
+  font-size: 1.2rem;
+  margin-bottom: 5px;
+}
+
+/* User Service */
+.user-service {
+  color: var(--fontclr2);
+  font-size: 0.9rem;
+  margin-bottom: 15px;
+}
+
+/* Question or FAQ */
+.user-question {
+  color: var(--fontclr1);
+  font-size: 0.95rem;
+  line-height: 1.5;
+}
+
+    </style>
+</head>
+
+<body>
+<section class="faq-slider-section">
+  <h2 class="faq-heading">Client Questions & Feedback</h2>
+
+  <div class="faq-slider">
+    <div class="faq-track">
+      <!-- Repeat these cards for continuous infinite scroll -->
+      <div class="faq-card">
+        <img src="https://i.pravatar.cc/100?img=12" alt="User" class="user-img" />
+        <h3 class="user-name">Sarah Ahmed</h3>
+        <p class="user-service">Service: Illustration Design</p>
+        <p class="user-question">Can you make the illustration match my brand’s pastel theme?</p>
+      </div>
+
+      <div class="faq-card">
+        <img src="https://i.pravatar.cc/100?img=32" alt="User" class="user-img" />
+        <h3 class="user-name">Daniel Smith</h3>
+        <p class="user-service">Service: Website UI/UX</p>
+        <p class="user-question">Do you provide Figma prototypes before final delivery?</p>
+      </div>
+
+      <div class="faq-card">
+        <img src="https://i.pravatar.cc/100?img=41" alt="User" class="user-img" />
+        <h3 class="user-name">Amina Noor</h3>
+        <p class="user-service">Service: Logo & Branding</p>
+        <p class="user-question">How many logo variations do I get in the standard package?</p>
+      </div>
+
+      <div class="faq-card">
+        <img src="https://i.pravatar.cc/100?img=23" alt="User" class="user-img" />
+        <h3 class="user-name">John Parker</h3>
+        <p class="user-service">Service: Digital Marketing</p>
+        <p class="user-question">Do you handle both paid ads and organic campaigns?</p>
+      </div>
+
+      <div class="faq-card">
+        <img src="https://i.pravatar.cc/100?img=15" alt="User" class="user-img" />
+        <h3 class="user-name">Maria Khan</h3>
+        <p class="user-service">Service: Poster Design</p>
+        <p class="user-question">Can I request revisions after you deliver the design?</p>
+      </div>
+
+      <!-- Duplicate cards for seamless infinite loop -->
+      <div class="faq-card">
+        <img src="https://i.pravatar.cc/100?img=12" alt="User" class="user-img" />
+        <h3 class="user-name">Sarah Ahmed</h3>
+        <p class="user-service">Service: Illustration Design</p>
+        <p class="user-question">Can you make the illustration match my brand’s pastel theme?</p>
+      </div>
+
+      <div class="faq-card">
+        <img src="https://i.pravatar.cc/100?img=32" alt="User" class="user-img" />
+        <h3 class="user-name">Daniel Smith</h3>
+        <p class="user-service">Service: Website UI/UX</p>
+        <p class="user-question">Do you provide Figma prototypes before final delivery?</p>
+      </div>
+
+      <div class="faq-card">
+        <img src="https://i.pravatar.cc/100?img=41" alt="User" class="user-img" />
+        <h3 class="user-name">Amina Noor</h3>
+        <p class="user-service">Service: Logo & Branding</p>
+        <p class="user-question">How many logo variations do I get in the standard package?</p>
+      </div>
+
+      <div class="faq-card">
+        <img src="https://i.pravatar.cc/100?img=23" alt="User" class="user-img" />
+        <h3 class="user-name">John Parker</h3>
+        <p class="user-service">Service: Digital Marketing</p>
+        <p class="user-question">Do you handle both paid ads and organic campaigns?</p>
+      </div>
+
+      <div class="faq-card">
+        <img src="https://i.pravatar.cc/100?img=15" alt="User" class="user-img" />
+        <h3 class="user-name">Maria Khan</h3>
+        <p class="user-service">Service: Poster Design</p>
+        <p class="user-question">Can I request revisions after you deliver the design?</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+    <script></script>
+</body>
+
+</html>

@@ -55,7 +55,7 @@
                 <li class="nav_li"><a class="nav_a" href="#Home">Home</a></li>
                 <li class="nav_li"><a class="nav_a" href="#About">About</a></li>
                 <li class="nav_li"><a class="nav_a" href="#Portfolio">Portfolio</a></li>
-                <li class="nav_li"><a class="nav_a" href="#Portfolio">Blogs</a></li>
+                <li class="nav_li"><a class="nav_a" href="#Testimonial">Testimonial</a></li>
                 <li class="nav_li"><a class="nav_a" href="#Contact">Contact</a></li>
             </ul>
         </div>
@@ -93,19 +93,23 @@
                 </div>
 
             </div>
-            <div class="right">
+            <div class="right fade-in-right">
                 <img class="main_img fade-in-right" src="img/dev.webp" alt="">
             </div>
         </div>
         <a href="#Home">
-            <button class="circle-btn">&#8593;</button>
+            <button class="circle-btn aniUpAndDown">&#8593;</button>
         </a>
-        <hr class="hr">
+        <hr class="hr ">
     </section>
     <section id="About" class="section2">
         <div class="about">
             <div class="about_upper slid-up">
-                <h1 class="about_upper_text">About Me</h1>
+                <!-- <h1 class="about_upper_text">About Me</h1> -->
+                <div class="about-text-wrapper">
+                    <h1 class="about-stroke-text">ABOUT</h1>
+                    <h2 class="about-main-text">ABOUT</h2>
+                </div>
                 <p class="about_upper_para">&#9830 Transforming Ideas Into Digital Experience &#9830</p>
             </div>
             <div class="about_lower">
@@ -136,7 +140,11 @@
 
     <section id="Portfolio" class="section3">
         <div class="portfolio_upper slid-up ">
-            <h1 class="portfolio_upper_text">Portfolio Showcase</h1>
+            <!-- <h1 class="portfolio_upper_text">Portfolio Showcase</h1> -->
+            <div class="protfolio-text-wrapper">
+                <h1 class="protfolio-stroke-text">MY SHOWCASE</h1>
+                <h2 class="protfolio-main-text">MY SHOWCASE</h2>
+            </div>
             <p class="portfolio_upper_para">&#9830 here you'll find a collection of my work including websites templates
                 digital products and creative projects. each piece reflects my skills attention to detail and focus on
                 creating smooth and effective user experiences &#9830</p>
@@ -158,7 +166,11 @@
         <div class="service_mainBox">
 
             <div class="service-section-textBox slid-up ">
-                <h2>My Services</h2>
+                <!-- <h2>My Services</h2> -->
+                <div class="service-text-wrapper">
+                    <h1 class="service-stroke-text">MY SERVICES</h1>
+                    <h2 class="service-main-text">MY SERVICES</h2>
+                </div>
                 <p>&#9830 I combine design and development to deliver complete digital solutions &#9830</p>
             </div>
 
@@ -190,6 +202,12 @@
                         strategic content management.</p>
                     <button class="Service-modern-btn">Learn More</button>
                 </div>
+                <div class="service-card">
+                    <h3>Troubleshooting</h3>
+                    <p>Expert troubleshooting services for all types of software and Windows issues, providing quick,
+                        efficient solutions to optimize performance and resolve technical challenges.</p>
+                    <button class="Service-modern-btn">Learn More</button>
+                </div>
 
             </div>
         </div>
@@ -197,75 +215,142 @@
 
     </section>
 
-    <section id="Contact" class="section4">
-        <div class="main_contact_box">
-            <div class="left_contact slid-left">
-                <form action="https://formsubmit.co/0d4b91e044a22b7955dbc1170bb01286" method="POST">
-                    <h1 class="contact_text">Get in Touch <img class="contact_text_left_icon" src="icon/share.svg"
-                            alt="">
-                    </h1>
-                    <p class="contact_para">Got a project or question? Send a message below and I will reply soon.</p>
+    <section id="Testimonial" class="section20">
+        <div class="testimon">
+            <div class="testimon_upper slid-up">
+                <!-- <h1 class="about_upper_text">About Me</h1> -->
+                <div class="testimon-text-wrapper slid-up">
+                    <h1 class="testimon-stroke-text">REVIEW</h1>
+                    <h2 class="testimon-main-text">WHAT OUR CLIENTS SAY</h2>
+                </div>
+                <p class="testimon_upper_para slid-up">&#9830 Transforming Ideas Into Digital Experience &#9830</p>
+            </div>
+            <div class="testimon_lower">
+                <div class="feedback-section slid-up">
+                    <div class="feedback-slider-container">
+                        <div class="feedback-slider">
+                            <div class="feedback-card">
+                                <img src="https://i.pravatar.cc/150?img=12" alt="Client" class="client-img">
+                                <h3 class="client-name">Emily Carter</h3>
+                                <p class="client-service">Brand Identity Design</p>
+                                <p class="client-feedback">"OMY Digital turned my ideas into reality! The design quality
+                                    and
+                                    communication were top-notch."</p>
+                            </div>
 
-                    <div class="user_box">
-                        <svg class="contact_user_img" viewBox="0 0 24 24" fill="var(--fontclr0)" width="20" height="20">
-                            <path
-                                d="M12 12c2.7 0 5-2.3 5-5s-2.3-5-5-5-5 2.3-5 5 2.3 5 5 5zm0 2c-3.3 0-10 1.7-10 5v3h20v-3c0-3.3-6.7-5-10-5z" />
-                        </svg>
-                        <input name="name" id="userform" class="contact_user_inp" type="text" placeholder="User Name"
-                            required>
+                            <div class="feedback-card">
+                                <img src="https://i.pravatar.cc/150?img=5" alt="Client" class="client-img">
+                                <h3 class="client-name">James Peterson</h3>
+                                <p class="client-service">Website UI/UX</p>
+                                <p class="client-feedback">"I’m really impressed with their creativity and attention to
+                                    detail.
+                                    Highly recommended!"</p>
+                            </div>
+
+                            <div class="feedback-card">
+                                <img src="https://i.pravatar.cc/150?img=9" alt="Client" class="client-img">
+                                <h3 class="client-name">Sophia Lee</h3>
+                                <p class="client-service">Illustration Design</p>
+                                <p class="client-feedback">"Beautiful illustrations and great customer support. I’ll
+                                    definitely work
+                                    with them again!"</p>
+                            </div>
+                        </div>
                     </div>
-
-                    <div class="user_box">
-                        <svg class="contact_user_img" viewBox="0 0 24 24" fill="var(--fontclr0)" width="20" height="20">
-                            <path
-                                d="M20 4H4c-1.1 0-2 .9-2 2v12c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 4l-8 5-8-5V6l8 5 8-5v2z" />
-                        </svg>
-                        <input name="email" id="emailform" class="contact_user_inp" type="email" placeholder="Email"
-                            required>
-                    </div>
-
-                    <div class="user_box">
-                        <svg class="contact_user_img" viewBox="0 0 24 24" fill="var(--fontclr0)" width="20" height="20">
-                            <path
-                                d="M10.59 13.41a2 2 0 0 0 2.82 0l4-4a2 2 0 1 0-2.82-2.82l-1.59 1.59-1.59-1.59a2 2 0 1 0-2.82 2.82l1.59 1.59zm8.24-8.24a4 4 0 0 1 0 5.66l-4 4a4 4 0 1 1-5.66-5.66l1.59-1.59 1.59 1.59a4 4 0 1 1 5.66-5.66l-1.59 1.59 1.59 1.59z" />
-                        </svg>
-                        <input name="link" id="linkform" class="contact_user_inp" type="url" placeholder="URL" required>
-                    </div>
-
-                    <div class="comm_box">
-                        <svg class="contact_user_img" viewBox="0 0 24 24" fill="var(--fontclr0)" width="20" height="20">
-                            <path d="M10 3H4c-1.1 0-2 .9-2 2v16l4-4h14c1.1 0 2-.9 2-2V5c0-1.1-.9-2-2-2h-8z" />
-                        </svg>
-                        <textarea placeholder="Message" name="message" id="msgform" class="contact_comm_inp" rows="4"
-                            cols="50" required></textarea>
-                    </div>
-
-                    <button type="submit" class="contact_left_btn"><img class="contact_left_btn_img"
-                            src="icon/share.svg" alt="">Send
-                        Message</button>
-                </form>
-
-                <div class="contect_left_connet_box">
-                    <h1 class="contect_left_connet_text con_t">-Connect With Me-</h1>
-                    <a class="contect_left_connet_anh con_anh1" target="_blank"
-                        href="https://www.linkedin.com/in/myousufkha"><img class="contect_left_connet_anh_img"
-                            src="icon/linkedin.svg" alt="">Let's Connect</a>
-                    <a class="contect_left_connet_anh" target="_blank"
-                        href="https://www.instagram.com/m_yousuf_007?igsh=Z2xwNmYwZWppcnRq"><img
-                            class="contect_left_connet_anh_img" src="icon/instagram.svg" alt="">Instagram</a>
-                    <a class="contect_left_connet_anh" href="#"><img class="contect_left_connet_anh_img"
-                            src="icon/facebook.svg" alt="">Facebook</a>
-                    <a class="contect_left_connet_anh" target="_blank" href="https://wa.me/3132980452"><img
-                            class="contect_left_connet_anh_img" src="icon/whatsapp.svg" alt="">Whatsapp</a>
-                    <a class="contect_left_connet_anh" target="_blank" href="https://github.com/Muhammad-Yousuf-k"><img
-                            class="contect_left_connet_anh_img" src="icon/github.svg" alt="">Github</a>
                 </div>
             </div>
-            <div class="right_contact slid-right">
-                <iframe class="googlemap"
-                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d28916.019239076053!2d67.0843110730022!3d25.05095540837437!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3eb3440540caec93%3A0x187210639cf3390d!2sLyari%20Basti%20Taiser%20Town%2C%20Karachi%2C%20Pakistan!5e0!3m2!1sen!2s!4v1748873705276!5m2!1sen!2s"
-                    allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </div>
+        <hr class="hr">
+    </section>
+
+    <section id="Contact" class="section4">
+        <div class="main_contact_box">
+            <div class="contact_upper">
+                <!-- <h1 class="about_upper_text">About Me</h1> -->
+                <div class="contact-text-wrapper slid-up">
+                    <h1 class="contact-stroke-text">CONTACT ME</h1>
+                    <h2 class="contact-main-text">CONTACT ME</h2>
+                </div>
+                <p class="contact_upper_para slid-up">&#9830 Transforming Ideas Into Digital Experience &#9830</p>
             </div>
+            <div class="contact_mann">
+
+                <div class="left_contact slid-left">
+                    <form action="https://formsubmit.co/0d4b91e044a22b7955dbc1170bb01286" method="POST">
+                        <h1 class="contact_text">Get in Touch <img class="contact_text_left_icon" src="icon/share.svg"
+                                alt="">
+                        </h1>
+                        <p class="contact_para">Got a project or question? Send a message below and I will reply soon.
+                        </p>
+
+                        <div class="user_box">
+                            <svg class="contact_user_img" viewBox="0 0 24 24" fill="var(--fontclr0)" width="20"
+                                height="20">
+                                <path
+                                    d="M12 12c2.7 0 5-2.3 5-5s-2.3-5-5-5-5 2.3-5 5 2.3 5 5 5zm0 2c-3.3 0-10 1.7-10 5v3h20v-3c0-3.3-6.7-5-10-5z" />
+                            </svg>
+                            <input name="name" id="userform" class="contact_user_inp" type="text"
+                                placeholder="User Name" required>
+                        </div>
+
+                        <div class="user_box">
+                            <svg class="contact_user_img" viewBox="0 0 24 24" fill="var(--fontclr0)" width="20"
+                                height="20">
+                                <path
+                                    d="M20 4H4c-1.1 0-2 .9-2 2v12c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 4l-8 5-8-5V6l8 5 8-5v2z" />
+                            </svg>
+                            <input name="email" id="emailform" class="contact_user_inp" type="email" placeholder="Email"
+                                required>
+                        </div>
+
+                        <div class="user_box">
+                            <svg class="contact_user_img" viewBox="0 0 24 24" fill="var(--fontclr0)" width="20"
+                                height="20">
+                                <path
+                                    d="M10.59 13.41a2 2 0 0 0 2.82 0l4-4a2 2 0 1 0-2.82-2.82l-1.59 1.59-1.59-1.59a2 2 0 1 0-2.82 2.82l1.59 1.59zm8.24-8.24a4 4 0 0 1 0 5.66l-4 4a4 4 0 1 1-5.66-5.66l1.59-1.59 1.59 1.59a4 4 0 1 1 5.66-5.66l-1.59 1.59 1.59 1.59z" />
+                            </svg>
+                            <input name="link" id="linkform" class="contact_user_inp" type="url" placeholder="URL"
+                                required>
+                        </div>
+
+                        <div class="comm_box">
+                            <svg class="contact_user_img" viewBox="0 0 24 24" fill="var(--fontclr0)" width="20"
+                                height="20">
+                                <path d="M10 3H4c-1.1 0-2 .9-2 2v16l4-4h14c1.1 0 2-.9 2-2V5c0-1.1-.9-2-2-2h-8z" />
+                            </svg>
+                            <textarea placeholder="Message" name="message" id="msgform" class="contact_comm_inp"
+                                rows="4" cols="50" required></textarea>
+                        </div>
+
+                        <button type="submit" class="contact_left_btn"><img class="contact_left_btn_img"
+                                src="icon/share.svg" alt="">Send
+                            Message</button>
+                    </form>
+
+                    <div class="contect_left_connet_box">
+                        <h1 class="contect_left_connet_text con_t">-Connect With Me-</h1>
+                        <a class="contect_left_connet_anh con_anh1" target="_blank"
+                            href="https://www.linkedin.com/in/myousufkha"><img class="contect_left_connet_anh_img"
+                                src="icon/linkedin.svg" alt="">Let's Connect</a>
+                        <a class="contect_left_connet_anh" target="_blank"
+                            href="https://www.instagram.com/m_yousuf_007?igsh=Z2xwNmYwZWppcnRq"><img
+                                class="contect_left_connet_anh_img" src="icon/instagram.svg" alt="">Instagram</a>
+                        <a class="contect_left_connet_anh" href="#"><img class="contect_left_connet_anh_img"
+                                src="icon/facebook.svg" alt="">Facebook</a>
+                        <a class="contect_left_connet_anh" target="_blank" href="https://wa.me/3132980452"><img
+                                class="contect_left_connet_anh_img" src="icon/whatsapp.svg" alt="">Whatsapp</a>
+                        <a class="contect_left_connet_anh" target="_blank"
+                            href="https://github.com/Muhammad-Yousuf-k"><img class="contect_left_connet_anh_img"
+                                src="icon/github.svg" alt="">Github</a>
+                    </div>
+                </div>
+                <div class="right_contact slid-right">
+                    <iframe class="googlemap"
+                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d28916.019239076053!2d67.0843110730022!3d25.05095540837437!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3eb3440540caec93%3A0x187210639cf3390d!2sLyari%20Basti%20Taiser%20Town%2C%20Karachi%2C%20Pakistan!5e0!3m2!1sen!2s!4v1748873705276!5m2!1sen!2s"
+                        allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                </div>
+            </div>
+
     </section>
 
 
@@ -313,7 +398,20 @@
     <script src="js/animation.js"></script>
 
 
+    <script>
+        const slider = document.querySelector('.feedback-slider');
+        const cards = document.querySelectorAll('.feedback-card');
+        let index = 0;
 
+        function nextSlide() {
+            index++;
+            if (index >= cards.length) index = 0;
+            slider.style.transform = `translateX(-${index * 100}%)`;
+        }
+
+        setInterval(nextSlide, 4000);
+
+    </script>
 </body>
 
 </html>

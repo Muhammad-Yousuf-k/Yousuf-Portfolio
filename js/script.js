@@ -1,20 +1,4 @@
-// for typing animation==================================================================
-var i = 0;
-var txt = "Specialized in Web Wevelopment"; /* The text */
-var speed = 50; /* The speed/duration of the effect in milliseconds */
 
-function typeWriter() {
-  if (i < txt.length) {
-    document.getElementById("demo").innerHTML += txt.charAt(i);
-    i++;
-    setTimeout(typeWriter, speed);
-    // console.log("sdsdssd");
-  }
-}
-
-setTimeout(() => {
-  typeWriter();
-}, 600);
 
 // for projects card buttons==================================================================
 let project = document.getElementById("projbtn");
@@ -117,47 +101,6 @@ const certificate = [
   }
 
 ];
-
-// const techz = [
-//   {
-//     icon: "icon/stackSVG/html.svg",
-//     name: "HTML",
-//   },
-//   {
-//     icon: "icon/stackSVG/css.svg",
-//     name: "CSS",
-//   },
-//   {
-//     icon: "icon/stackSVG/javascript.svg",
-//     name: "JavaScript",
-//   },
-//   {
-//     icon: "icon/stackSVG/wordpress.svg",
-//     name: "WordPress",
-//   },
-//   {
-//     icon: "icon/stackSVG/photoshop.svg",
-//     name: "PhotoShop",
-//   },
-//   {
-//     icon: "icon/stackSVG/microsoft_office.svg",
-//     name: "Microsoft Office",
-//   },
-//   {
-//     icon: "icon/stackSVG/express.svg",
-//     name: "express.js",
-//   },
-//   {
-//     icon: "icon/stackSVG/node.svg",
-//     name: "node.js",
-//   },
-//   {
-//     icon: "icon/stackSVG/mongodb.svg",
-//     name: "mongoDB",
-//   }
-
-// ];
-
 const techz = [
   {
     icon: "fab fa-html5",

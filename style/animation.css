@@ -129,3 +129,7 @@
 .service-card:nth-child(4) {
     animation: float 9s ease-in-out infinite;
 }
+
+.aniUpAndDown {
+    animation: float 5s ease-in-out infinite;
+}
