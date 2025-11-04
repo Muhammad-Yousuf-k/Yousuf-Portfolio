@@ -107,10 +107,10 @@
         display: flex;
         justify-content: space-between;
 
-        
+
     }
 
-    
+
 
 
 
@@ -139,29 +139,27 @@
     #bug {
         display: none;
     }
+
     #burgerBtn {
         display: block;
     }
 
-    .name {
-        margin-left: 0%;
-        width: 100%;
-        display: flex;
-        justify-content: space-evenly;
-    }
+
+
+
 
 
     .circle-btn {
         width: 65px;
         height: 65px;
     }
-    
+
     .nav_a {
         padding: 8px 0px;
         margin: 0px 10px;
         font-size: 16px;
 
-}
+    }
 
 
 }
@@ -274,6 +272,9 @@
     }
 
 
+    .about-stroke-text {
+        font-size: 7rem;
+    }
 
 
 
@@ -290,6 +291,10 @@
     .modern-btn,
     .btnC {
         padding: 14px 20px;
+    }
+
+    .about-stroke-text {
+        font-size: 6rem;
     }
 
 
@@ -309,6 +314,10 @@
         font-size: var(--mbHeadingMoreMoreSmallSize);
     }
 
+    .about-stroke-text {
+        font-size: 5rem;
+    }
+
 
 
 
@@ -319,11 +328,96 @@
 
 
 
+@media only screen and (max-width: 1024px) {
+
+
+    .protfolio-stroke-text {
+        font-size: 8rem;
+
+    }
+
+    /* Centered solid text */
+    .protfolio-main-text {
+        font-size: 4rem;
+    }
+
+
+
+
+
+}
+@media only screen and (max-width: 768px) {
+
+
+    .protfolio-stroke-text {
+        font-size: 6rem;
+
+    }
+
+    /* Centered solid text */
+    .protfolio-main-text {
+        font-size: 3rem;
+    }
+
+
+
+
+
+}
+
 @media only screen and (max-width: 425px) {
 
 
     .portfolio_upper_text {
         font-size: var(--mbHeadingSize);
+    }
+
+    .protfolio-stroke-text {
+        font-size: 3.5rem;
+
+    }
+
+    /* Centered solid text */
+    .protfolio-main-text {
+        font-size: 2rem;
+    }
+
+
+
+
+
+}
+@media only screen and (max-width: 375px) {
+
+
+
+    .protfolio-stroke-text {
+        font-size: 3rem;
+
+    }
+
+    /* Centered solid text */
+    .protfolio-main-text {
+        font-size: 1.7rem;
+    }
+
+
+
+
+
+}
+@media only screen and (max-width: 320px) {
+
+
+
+    .protfolio-stroke-text {
+        font-size: 2.5rem;
+
+    }
+
+    /* Centered solid text */
+    .protfolio-main-text {
+        font-size: 1.4rem;
     }
 
 
@@ -343,9 +437,19 @@
 
         grid-template-columns: repeat(3, minmax(280px, 1fr));
 
-
-
     }
+
+    .service-stroke-text {
+    font-size: 9rem;
+    
+}
+
+/* Centered solid text */
+.service-main-text {
+   
+    font-size: 3rem;
+
+}
 
 
 }
@@ -356,6 +460,13 @@
         grid-template-columns: repeat(2, minmax(280px, 1fr));
 
     }
+
+     .service-stroke-text {
+    font-size: 6.5rem;
+    
+}
+
+
 }
 
 @media only screen and (max-width: 425px) {
@@ -371,6 +482,18 @@
         overflow-y: scroll;
 
     }
+
+     .service-stroke-text {
+    font-size: 3.5rem;
+    
+}
+
+/* Centered solid text */
+.service-main-text {
+   
+    font-size: 2rem;
+
+}
 
 
 }
@@ -388,6 +511,12 @@
 
     }
 
+     .service-stroke-text {
+    font-size: 3rem;
+    
+}
+
+
 
 
 }
@@ -398,17 +527,73 @@
         min-height: 240px;
     }
 
+    .service-stroke-text {
+    font-size: 2.5rem;
+    
 }
 
+/* Centered solid text */
+.service-main-text {
+   
+    font-size: 1.7rem;
+
+}
+
+}
+
+
+/* testi */
+
+@media only screen and (max-width: 425px) {
+.testimon-stroke-text {
+    font-size: 6rem;
+   
+}
+
+/* Centered solid text */
+.testimon-main-text {
+    
+    font-size: 1.7rem;
+  
+}
+   
+
+}
+@media only screen and (max-width: 375px) {
+.testimon-stroke-text {
+    font-size: 5.7rem;
+   
+}
+
+/* Centered solid text */
+.testimon-main-text {
+    
+    font-size: 1.5rem;
+  
+}
+   
+
+}
+
+@media only screen and (max-width: 320px) {
+.testimon-stroke-text {
+    font-size: 5rem;
+   
+}
+
+/* Centered solid text */
+.testimon-main-text {
+    
+    font-size: 1.4rem;
+  
+}
+   
+
+}
 
 /* contact */
 
-@media only screen and (max-width: 768px) {
 
-
-
-
-}
 
 
 @media only screen and (max-width: 425px) {

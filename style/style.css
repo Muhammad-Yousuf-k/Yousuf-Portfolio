@@ -31,7 +31,7 @@ html {
 
 body {
     height: 2500px;
-    background-color: var(--mainclr);
+    background: var(--mainclr);
 }
 
 /* home section======================================================= */
@@ -397,7 +397,7 @@ body {
 
 /* Big outlined text */
 .about-stroke-text {
-    font-size: clamp(3rem, 12vw, 10rem);
+    font-size: 10rem;
     /* scales with screen size */
     font-weight: 900;
     color: transparent;
@@ -413,7 +413,7 @@ body {
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-    font-size: clamp(1rem, 5vw, 3rem);
+    font-size: 3rem;
     /* responsive size */
     font-weight: 700;
     color: var(--fontclr0);
@@ -539,7 +539,7 @@ body {
 /* Big outlined text */
 .protfolio-stroke-text {
     /* font-size: clamp(var(--mbHeadingMoreMoreSmallSize), 12vw, var(--HeadingSize)); */
-    font-size: clamp(var(--mbHeadingMoreMoreSmallSize), 12vw, var(--HeadingSize));
+    font-size: 10rem;
     /* scales with screen size */
     font-weight: 900;
     color: transparent;
@@ -555,7 +555,7 @@ body {
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-    font-size: clamp(2rem, 5vw, 4rem);
+    font-size: 4rem;
     /* responsive size */
     font-weight: 700;
     color: var(--fontclr0);
@@ -851,7 +851,7 @@ body {
 
 /* Big outlined text */
 .service-stroke-text {
-    font-size: clamp(3rem, 12vw, 10rem);
+    font-size: 10rem;
     /* scales with screen size */
     font-weight: 900;
     color: transparent;
@@ -867,7 +867,7 @@ body {
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-    font-size: clamp(1rem, 5vw, 3rem);
+    font-size: 3rem;
     /* responsive size */
     font-weight: 700;
     color: var(--fontclr0);
@@ -1021,7 +1021,7 @@ body {
 
 /* Big outlined text */
 .testimon-stroke-text {
-    font-size: clamp(3rem, 12vw, 10rem);
+    font-size: 11rem;
     /* scales with screen size */
     font-weight: 900;
     color: transparent;
@@ -1037,7 +1037,7 @@ body {
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-    font-size: clamp(1rem, 5vw, 3rem);
+    font-size: 3rem;
     /* responsive size */
     font-weight: 700;
     color: var(--fontclr0);
@@ -1599,36 +1599,3 @@ form {
     transform: translateX(0);
 }
 
-
-.about-text-wrapper {
-    position: relative;
-    display: inline-block;
-    text-align: center;
-    width: 100%;
-}
-
-/* Big outlined text */
-.about-stroke-text {
-    font-size: clamp(3rem, 12vw, 10rem);
-    /* scales with screen size */
-    font-weight: 900;
-    color: transparent;
-    -webkit-text-stroke: 2px var(--fontclr0);
-    opacity: 0.15;
-    margin: 0;
-    white-space: nowrap;
-}
-
-/* Centered solid text */
-.about-main-text {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    font-size: clamp(1rem, 5vw, 3rem);
-    /* responsive size */
-    font-weight: 700;
-    color: var(--fontclr0);
-    margin: 0;
-    white-space: nowrap;
-}
