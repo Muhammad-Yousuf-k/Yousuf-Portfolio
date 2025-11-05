@@ -36,17 +36,19 @@
         href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
         rel="stylesheet">
     <link rel="stylesheet" href="style/style.css">
-    <link rel="stylesheet" href="style/color.css">
+    <link rel="stylesheet" href="style/root-variable.css">
     <link rel="stylesheet" href="style/phone.css">
     <link rel="stylesheet" href="style/animation.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+    <!-- utilty css -->
+    <link rel="stylesheet" href="./style/utilitys/modern-black-btn.css">
     <script src=" https://smtpjs.com/v3/smtp.js"></script>
-
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
 </head>
 
 <body>
-    <section id="Home" class="section1">
 
+    <nav>
         <div class="nav fade-in-down">
             <h1 class="name">Muhammad Yousuf <img id="bug" class="burger" src="icon/burger.svg" alt=""><img
                     id="burgerBtn" class="burger" src="icon/burger.svg" alt=""></h1>
@@ -59,10 +61,9 @@
                 <li class="nav_li"><a class="nav_a" href="#Contact">Contact</a></li>
             </ul>
         </div>
-
         <!-- Mobile Menu -->
         <div id="mobileNav" class="mobile_nav">
-            <button class="modern-btn bbbtn" id="back">back</button>
+            <button class="btnBack" id="back">back</button>
             <ul>
                 <li><a href="#Home">Home</a></li>
                 <li><a href="#About">About</a></li>
@@ -72,7 +73,11 @@
             </ul>
         </div>
 
+    </nav>
+
+    <section id="Home" class="section1">
         <div class="home">
+
             <div class="left">
                 <div class="textto">
                     <h1 class="main_head fade-in-left "><span class="main_head_white">Software</span><br>Engineer</h1>
@@ -81,10 +86,10 @@
                 <div class="textto1">
 
                     <div class="main_btn fade-in-left">
-                        <button class="btn b1">React</button>
-                        <button class="btn">javascript</button>
-                        <button class="btn">node.js</button>
-                        <button class="btn">tailwind</button>
+                        <button class="btn b1">MongoDB</button>
+                        <button class="btn">Express</button>
+                        <button class="btn">React</button>
+                        <button class="btn">Node</button>
                     </div>
                     <div class="main_btn1 fade-in-left">
                         <a href="#projbtn"><button class="modern-btn b12">Projects</button></a>
@@ -102,6 +107,7 @@
         </a>
         <hr class="hr ">
     </section>
+
     <section id="About" class="section2">
         <div class="about">
             <div class="about_upper slid-up">
@@ -174,40 +180,8 @@
                 <p>&#9830 I combine design and development to deliver complete digital solutions &#9830</p>
             </div>
 
-            <div class="service-container slid-up ">
-                <div class="service-card">
-                    <h3>Web Development</h3>
-                    <p>Responsive and performance-driven websites built using HTML CSS JavaScript and Node.js. Every
-                        website is crafted with attention to design detail and user experience.</p>
-                    <button class="Service-modern-btn">Learn More</button>
-                </div>
+            <div id="service-container" class="service-container slid-up ">
 
-                <div class="service-card">
-                    <h3>WordPress Customization</h3>
-                    <p>Professional setup and theme customization for WordPress sites. SEO optimized pages that load
-                        fast and are easy to manage for business owners.</p>
-                    <button class="Service-modern-btn">Learn More</button>
-                </div>
-
-                <div class="service-card">
-                    <h3>Graphic Design</h3>
-                    <p>Creative visuals and brand elements designed in Adobe Photoshop. I create cohesive brand
-                        identities and eye-catching marketing graphics.</p>
-                    <button class="Service-modern-btn">Learn More</button>
-                </div>
-
-                <div class="service-card">
-                    <h3>SEO & Digital Marketing</h3>
-                    <p>Helping brands rank higher and reach audiences through SEO keyword optimization backlinks and
-                        strategic content management.</p>
-                    <button class="Service-modern-btn">Learn More</button>
-                </div>
-                <div class="service-card">
-                    <h3>Troubleshooting</h3>
-                    <p>Expert troubleshooting services for all types of software and Windows issues, providing quick,
-                        efficient solutions to optimize performance and resolve technical challenges.</p>
-                    <button class="Service-modern-btn">Learn More</button>
-                </div>
 
             </div>
         </div>
@@ -228,34 +202,7 @@
             <div class="testimon_lower">
                 <div class="feedback-section slid-up">
                     <div class="feedback-slider-container">
-                        <div class="feedback-slider">
-                            <div class="feedback-card">
-                                <img src="https://i.pravatar.cc/150?img=12" alt="Client" class="client-img">
-                                <h3 class="client-name">Emily Carter</h3>
-                                <p class="client-service">Brand Identity Design</p>
-                                <p class="client-feedback">"OMY Digital turned my ideas into reality! The design quality
-                                    and
-                                    communication were top-notch."</p>
-                            </div>
-
-                            <div class="feedback-card">
-                                <img src="https://i.pravatar.cc/150?img=5" alt="Client" class="client-img">
-                                <h3 class="client-name">James Peterson</h3>
-                                <p class="client-service">Website UI/UX</p>
-                                <p class="client-feedback">"I’m really impressed with their creativity and attention to
-                                    detail.
-                                    Highly recommended!"</p>
-                            </div>
-
-                            <div class="feedback-card">
-                                <img src="https://i.pravatar.cc/150?img=9" alt="Client" class="client-img">
-                                <h3 class="client-name">Sophia Lee</h3>
-                                <p class="client-service">Illustration Design</p>
-                                <p class="client-feedback">"Beautiful illustrations and great customer support. I’ll
-                                    definitely work
-                                    with them again!"</p>
-                            </div>
-                        </div>
+                        <div id="testimonial-container" class="feedback-slider"></div>
                     </div>
                 </div>
             </div>
@@ -394,7 +341,15 @@
             <p>&copy; 2025 M. Yousuf Khan. All rights reserved.</p>
         </div>
     </footer>
-    <script src="js/script.js"></script>
+
+
+
+
+
+    <script src="js/card-data.js"></script>
+    <script src="js/protfolio-card.js"></script>
+    <script src="js/btn-burger.js"></script>
+    <script src="js/type-animation.js"></script>
     <script src="js/animation.js"></script>
 
 

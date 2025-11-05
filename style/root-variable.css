@@ -15,7 +15,8 @@
     --gradiantBgclr: linear-gradient(to right, rgb(65, 11, 165), var(--fontclr0)); /* background gradient */
 
     /* ---------------- Font Family ---------------- */
-    --fnt_cur: "Roboto", sans-serif; /* accent font for headings */
+    --font_head: "Montserrat", sans-serif; /* accent font for headings */
+    --font_para: "Exo 2", sans-serif; /* accent font for headings */
 
     /* ---------------- Desktop Font Sizes ---------------- */
     --HeadingSize: 10vh; /* large heading */

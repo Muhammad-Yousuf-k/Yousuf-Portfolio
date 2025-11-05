@@ -1,5 +1,3 @@
-
-
 // for projects card buttons==================================================================
 let project = document.getElementById("projbtn");
 let certi = document.getElementById("cerbtn");
@@ -46,108 +44,7 @@ tech.addEventListener("click", () => {
 });
 
 // for projects card==================================================================
-const projects = [
-  {
-    title: "Netflix Clone",
-    description: "practicing to enchant to skills, try to clone Netflix",
-    image: "img/proj/netflix.webp",
-    link: "https://muhammad-yousuf-k.github.io/Netflex-clone/",
-  },
 
-  {
-    title: "Tic Tak Toe",
-    description: "practicing to enchant to skills, To Make a Game",
-    image: "img/proj/tikTakToc.webp",
-    link: "https://tiktaktoc-og.netlify.app/",
-  },
-  {
-    title: "YouTube Clone",
-    description: "practicing to enchant to skills, try to clone YouTube",
-    image: "img/proj/youtube.webp",
-    link: "https://muhammad-yousuf-k.github.io/youtube_cloned/",
-  },
-  {
-    title: "ExpensePro",
-    description: "Expense Pro is a simple app to track and manage your daily expenses easily.",
-    image: "img/proj/ExpensePro.webp",
-    link: "https://expensepro-production.up.railway.app/",
-  },
-
-];
-const certificate = [
-  {
-    title: "Web Development",
-    description: "by Visionery IT Institute",
-    image: "img/certificate/web_certi.webp",
-    Status: "Complete"
-  },
-  {
-    title: "C.I.T",
-    description: "by Visionery IT Institute",
-    image: "img/certificate/cit_certi.webp",
-    Status: "Complete"
-  },
-  {
-    title: "Matric",
-    description: "by Pak German Capital School",
-    image: "img/certificate/",
-    Status: "Complete"
-  },
-  {
-    title: "(DAE) in software engineering",
-    description: "by Capital Institute",
-    image: "img/certificate/",
-    Status: "continue"
-  }
-
-];
-const techz = [
-  {
-    icon: "fab fa-html5",
-    name: "HTML",
-    progress: "95%"
-  },
-  {
-    icon: "fab fa-css3-alt",
-    name: "CSS",
-    progress: "90%"
-  },
-  {
-    icon: "fab fa-js",
-    name: "JavaScript",
-    progress: "85%"
-  },
-  {
-    icon: "fab fa-wordpress",
-    name: "WordPress",
-    progress: "88%"
-  },
-  {
-    icon: "fas fa-paint-brush",
-    name: "Photoshop",
-    progress: "86%"
-  },
-  {
-    icon: "fas fa-file-word",
-    name: "Microsoft Office",
-    progress: "90%"
-  },
-  {
-    icon: "fas fa-server",
-    name: "Express.js",
-    progress: "78%"
-  },
-  {
-    icon: "fab fa-node-js",
-    name: "Node.js",
-    progress: "80%"
-  },
-  {
-    icon: "fas fa-database",
-    name: "MongoDB",
-    progress: "75%"
-  }
-];
 
 
 // project============================
@@ -160,7 +57,7 @@ projects.forEach((project) => {
  <h3>${project.title}</h3>
  <p>${project.description}</p>
  <a href="${project.link}" target="_blank">
- <button>view project</button>
+ <button class="modern-btn">view project</button>
  </a>
  `;
   container.appendChild(card);
@@ -214,40 +111,36 @@ techz.forEach((techz) => {
 });
 
 
-//for burger btn===============================================================
 
-let burger = document.getElementById("bug")
+// service card
+let serviceContainer = document.getElementById("service-container");
+serviceData.forEach((elem) => {
+  const serviceCard = document.createElement("div");
+  serviceCard.className = "service-card";
 
-burger.addEventListener("click", () => {
-  let ul = document.getElementById("nv_ul")
-  // ul.setAttribute("display", "none");
+  serviceCard.innerHTML = `
+    <h3>${elem.serviceName}</h3>
+    <p>${elem.serviceDetailed}</p>
+    <button class="modern-btn Service-modern-btn">Learn More</button>
+  `;
 
-
-  if (ul.style.display === "none") {
-    ul.style.display = "flex"
-    console.log("true");
-
-  } else {
-    ul.style.display = "none"
-    console.log("false");
-  }
-})
-
-
-
-const burgerm = document.getElementById("burgerBtn");
-const back = document.getElementById("back");
-const mobileNav = document.getElementById("mobileNav");
-
-burgerm.addEventListener("click", () => {
-  mobileNav.classList.toggle("active");
+  serviceContainer.appendChild(serviceCard);
 });
 
-back.addEventListener("click", () => {
-  mobileNav.classList.toggle("active");
-});
 
-// optional: close when clicking a link
-document.querySelectorAll(".mobile_nav a").forEach(link => {
-  link.addEventListener("click", () => mobileNav.classList.remove("active"));
+
+// testimonial card
+let testimonialContainer = document.getElementById("testimonial-container");
+testimonialData.forEach((elem) => {
+  const testimonialCard = document.createElement("div");
+  testimonialCard.className = "feedback-card";
+
+  testimonialCard.innerHTML = `
+    <img src="${elem.img}" alt="Client" class="client-img">
+                                <h3 class="client-name">${elem.ClientName}</h3>
+                                <p class="client-service">${elem.Service}</p>
+                                <p class="client-feedback">${elem.detailed}</p>
+  `;
+
+  testimonialContainer.appendChild(testimonialCard);
 });

@@ -1,0 +1,38 @@
+.modern-btn {
+    background: var(--gradiantBgclr);
+    color: var(--fontclr1);
+    border: none;
+    padding: 14px 35px;
+    font-size: 16px;
+    letter-spacing: 0.5px;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    box-shadow: 0 0 10px var(--glowclr);
+}
+
+
+
+.modern-btn:hover {
+    box-shadow: 0 0 20px var(--glowclr), 0 0 40px var(--glowclr);
+    transform: translateY(-3px);
+}
+
+.btnC {
+    color: var(--fontclr1);
+    border: none;
+    padding: 14px 35px;
+    font-size: 16px;
+    letter-spacing: 0.5px;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    background: #000;
+    box-shadow: 0 0 10px white;
+}
+
+.btnC:hover {
+    background: black;
+    box-shadow: 0 0 40px white;
+    transform: translateY(-3px);
+}

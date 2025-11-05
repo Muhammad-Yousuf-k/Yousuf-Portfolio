@@ -179,6 +179,7 @@
 
     .name {
         justify-content: space-between;
+        font-size: 25px;
     }
 
 
@@ -194,7 +195,6 @@
 
 
 }
-
 
 
 /* about  */
@@ -297,6 +297,10 @@
         font-size: 6rem;
     }
 
+    .about_btn_box a button{
+        padding: 10px 20px;
+}
+
 
 
 
@@ -317,7 +321,9 @@
     .about-stroke-text {
         font-size: 5rem;
     }
-
+.about_btn_box a button{
+        padding: 10px 15px;
+}
 
 
 
@@ -346,6 +352,7 @@
 
 
 }
+
 @media only screen and (max-width: 768px) {
 
 
@@ -387,6 +394,7 @@
 
 
 }
+
 @media only screen and (max-width: 375px) {
 
 
@@ -406,6 +414,7 @@
 
 
 }
+
 @media only screen and (max-width: 320px) {
 
 
@@ -440,16 +449,16 @@
     }
 
     .service-stroke-text {
-    font-size: 9rem;
-    
-}
+        font-size: 9rem;
 
-/* Centered solid text */
-.service-main-text {
-   
-    font-size: 3rem;
+    }
 
-}
+    /* Centered solid text */
+    .service-main-text {
+
+        font-size: 3rem;
+
+    }
 
 
 }
@@ -461,10 +470,10 @@
 
     }
 
-     .service-stroke-text {
-    font-size: 6.5rem;
-    
-}
+    .service-stroke-text {
+        font-size: 6.5rem;
+
+    }
 
 
 }
@@ -483,17 +492,17 @@
 
     }
 
-     .service-stroke-text {
-    font-size: 3.5rem;
-    
-}
+    .service-stroke-text {
+        font-size: 3.5rem;
 
-/* Centered solid text */
-.service-main-text {
-   
-    font-size: 2rem;
+    }
 
-}
+    /* Centered solid text */
+    .service-main-text {
+
+        font-size: 2rem;
+
+    }
 
 
 }
@@ -511,10 +520,10 @@
 
     }
 
-     .service-stroke-text {
-    font-size: 3rem;
-    
-}
+    .service-stroke-text {
+        font-size: 3rem;
+
+    }
 
 
 
@@ -528,16 +537,16 @@
     }
 
     .service-stroke-text {
-    font-size: 2.5rem;
-    
-}
+        font-size: 2.5rem;
 
-/* Centered solid text */
-.service-main-text {
-   
-    font-size: 1.7rem;
+    }
 
-}
+    /* Centered solid text */
+    .service-main-text {
+
+        font-size: 1.7rem;
+
+    }
 
 }
 
@@ -545,49 +554,50 @@
 /* testi */
 
 @media only screen and (max-width: 425px) {
-.testimon-stroke-text {
-    font-size: 6rem;
-   
+    .testimon-stroke-text {
+        font-size: 6rem;
+
+    }
+
+    /* Centered solid text */
+    .testimon-main-text {
+
+        font-size: 1.7rem;
+
+    }
+
+
 }
 
-/* Centered solid text */
-.testimon-main-text {
-    
-    font-size: 1.7rem;
-  
-}
-   
-
-}
 @media only screen and (max-width: 375px) {
-.testimon-stroke-text {
-    font-size: 5.7rem;
-   
-}
+    .testimon-stroke-text {
+        font-size: 5.7rem;
 
-/* Centered solid text */
-.testimon-main-text {
-    
-    font-size: 1.5rem;
-  
-}
-   
+    }
+
+    /* Centered solid text */
+    .testimon-main-text {
+
+        font-size: 1.5rem;
+
+    }
+
 
 }
 
 @media only screen and (max-width: 320px) {
-.testimon-stroke-text {
-    font-size: 5rem;
-   
-}
+    .testimon-stroke-text {
+        font-size: 5rem;
 
-/* Centered solid text */
-.testimon-main-text {
-    
-    font-size: 1.4rem;
-  
-}
-   
+    }
+
+    /* Centered solid text */
+    .testimon-main-text {
+
+        font-size: 1.4rem;
+
+    }
+
 
 }
 
